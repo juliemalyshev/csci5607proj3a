@@ -117,7 +117,7 @@ int main(int argc, char** argv){
         bool hit = raySphereIntersectBool(eye,rayDir,spheres[index],radii[index]);
         vec3 rayToLight = lightPosP - intPoint;
         bool hit2 = raySphereIntersectBool(intPoint,rayToLight,spheres[index],radii[index]);
-        std::cout<<hit2;
+        //std::cout<<hit2;
 
         if (hit){
           //lighting equation, diffuse + specular + ambient
